@@ -16,9 +16,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/appointment.css" />
+    <link rel="stylesheet"l href="css/appointment.css" />
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
-    <title>healthPro | Appointment page | Sign in page</title>
+    <title>healthPro | Register page</title>
   </head>
   <body>
         <!-- header  -->
@@ -34,13 +34,13 @@
         <section class="header-middle-container">
           <nav>
             <ul class="nav-lists">
-              <li class="nav-list">
+                <li class="nav-list">
                   <a href="/index.html">Home</a>
               </li>
-              <li class="nav-list">
                 <button class="nav-list-btn">
+              <li class="nav-list">
                 <a href="/appointment.html" >Appointment</a>
-                </button>
+              </button>
               </li>
               <li class="nav-list">
                 <a href="/index.html#services" >Services</a>
@@ -56,163 +56,171 @@
         </section>
         <section class="header-right-container">
           <button class="header-btn-1">
-            <a href="/appointment.html">Sign in</a>
+            <a href="/login.html">Sign in</a>
+          </button>
+          <button class="header-btn-2">
+            <a href="/register.html">Register</a>
           </button>
         </section>
       </header>
     </section>
     <!-- header  -->
      <!-- Hero section -->
-      <section class="appointment-hero-container container">
+      <section class="hero-appointment-container container">
         <section class="left-appointment-hero-container">
           <h2 class="appointment-title">
-          We help people to
-           <br>
-          get appointment
+            We help people to
             <br>
-          in online
+            get appointment
+            <br>
+            Online
           </h2>
           <p class="appointment-hero-text">
           Lorèm Media is a full-service social media agency. We offer
-           <br>
+          <br>
           businesses innovative solutions That deliver the right type of
-           <br>
+          <br>
           audience to you in the most effective strategies possible.
-           <br>
+          <br>
           We strive to develop a community around your business,
           <br>
-          polishing your branding, and improving your public relations.
+          polishing your branding, and improving your public relations.   
           </p>
         </section>
         <section class="right-appointment-hero-container">
           <img src="image/bq.png" alt="appointment-overlay" class="appointment-overlay">
-          <img src="image/appointment-img1.png" alt="" class="appointment-img">
+          <img src="image/appointment-img2.png" alt="" class="appointment-img">
         </section>
       </section>
      <!-- Hero section -->
-     <!-- Form section -->
-     <!-- Form head section -->
-      <section class="form-section container">
-        <div class="form-text-content">
-        <h2 class="form-head-title">
-          Sign up
-        </h2>
-        <h2 class="form-head-title-2">
-          Please Sign Up To Continue
-        </h2>
-        <p class="form-text-1">
-         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
-        <p class="form-text-2">
-          Lorem Ipsum has been the industry's standard dummy text ever since. 
-        </p>
-        </div>
-      <div class="form-head-btn">
-        <button class="form-head-btn-1">
-          Patient
-        </button>
-        <button class="form-head-btn-2">
-          Doctor
-        </button>
-        <button class="form-head-btn-3">
-          Admin
-        </button>
-      </div>
-     <!-- Form head section -->
+    <!-- Form Section -->
+     <section class="form-section container">
+      <h2 class="form-title">
+        Appointment
+      </h2>
       <section class="form-container">
-        <section class="form-content">
-          <form >
-            <div class="input-group-1">
-              <input type="text" placeholder="First Name" required class="First-name">
-              <input type="text" placeholder="Last Name" required class="Last-name">
-            </div>
-            <div class="input-group-2">
+        <form >
+        <div class="input-group-1">
+          <input type="text" required placeholder="First Name" class="First-Name">
+          <input type="text" required placeholder="Last Name" class="Last-Name">
+        </div>
+        <div class="input-group-2">
               <input type="email" placeholder="Email" required class="mail">
               <input type="number" class="tel" placeholder="Mobile Number" required>
-            </div>
-            <div class="input-group-3">
+        </div>
+        <div class="input-group-3">
               <input type="text" placeholder="NIC" required class="nic">
               <input type="date" placeholder="Date of Birth" class="dob" required>
-            </div>
-            <div class="input-group-4">
-              <textarea name="" id="" class="address-box">Address</textarea>
-            </div>
-            <div class="input-group-5">
+        </div>
+        <div class="input-group-4">
               <select class="gender">
                 <option value="" disabled selected>Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
               </select>
-              <input type="password" required placeholder="Password" class="password">
-              <input type="password" required placeholder="Confirm password" class="confirm-password">
-            </div>
-            <button class="sign-in-button">
-              Register
-            </button>
-          </form>
-        </section>
+          <input type="text" required placeholder="Appointment Date" class="Appointment-date">
+          <input type="text" required placeholder="Appointment Time" class="Appointment-Time">
+        </div>
+        <div class="input-group-5">
+                <select required class="Department">
+                    <option value="" disabled selected>Department Name</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                </select>
+          <input type="text" required placeholder="Doctor Name" class="Doctor-Name">
+        </div>
+        <div class="input-group-6">
+              <textarea name="" id="" class="address-box">Address</textarea>
+        </div>
+        <button class="register-button">
+          Register
+        </button>
+        </form>
       </section>
-      </section>
-      <!-- Form section -->
-       <!-- Contact section -->
-        <section class="contact-section container" id="contact us">
-          <hr class="line">
-          <section class="contact-content">
-            <section class="first-contact-container">
-              <img src="image/healthPro-logo (1).png" alt="logo" class="contact-logo">
-            </section>
-            <section class="second-contact-container">
-              <h2 class="contact-title">
-                Quick Links
-              </h2>
-              <ul class="lists">
-                <li class="list">Home</li>
-                <li class="list">Appointment</li>
-                <li class="list">Services</li>
-                <li class="list">About us</li>
-                <li class="list">Contact us</li>
-              </ul>
-            </section>
-            <section class="third-contact-container">
-              <h2 class="contact-title">Hours</h2>
-              <div class="contact-3-content">
-                <ul class="lists">
-                  <li class="list">Monday:</li>
-                  <li class="list">Tuesday:</li>
-                  <li class="list">Wednesday:</li>
-                  <li class="list">Thursday:</li>
-                  <li class="list">Friday:</li>
-                </ul>
-                <ul class="lists">
-                  <li class="list">9:00 - 18:00</li>
-                  <li class="list">9:00 - 18:00</li>
-                  <li class="list">9:00 - 18:00</li>
-                  <li class="list">9:00 - 18:00</li>
-                  <li class="list">9:00 - 18:00</li>
-                </ul>
-              </div>
-            </section>
-            <section class="fourth-contact-container">
-              <h2 class="contact-title">Contact us</h2>
-              <div class="contact-icon">
-                <ul class="lists">
-                  <li class="list">
-                    <img src="image/icon1.png" alt="icon1" class="icon">000-000-000
-                  </li>
-                  <li class="list">
-                    <img src="image/icon2.png" alt="icon2" class="icon">
-                    info@email.com
-                  </li>
-                  <li class="list">
-                    <img src="image/icon3.png" alt="icon3" class="icon">
-                    Lagos, Nigeria
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </section>
+     </section>
+    <!-- Form Section -->
+    <!-- Contact Section  -->
+     <section class="contact-section container" id="contact us">
+      <hr class="line">
+      <section class="contact-content">
+        <section class="first-contact-container">
+          <a href="/appointment.html">
+          <img src="image/healthPro-logo (1).png" alt="logo" class="contact-logo">
+          </a>
         </section>
-       <!-- Contact section -->
+        <section class="second-contact-container">
+          <h2 class="contact-title">
+            Quick Links
+          </h2>
+             <ul class="lists">
+            <li class="list">
+                  <a href="/index.html">Home</a>
+            </li>
+            </li>
+            <li class="list">
+                  <a href="/appointment.html">Appointment</a>
 
+            </li>
+            <li class="list">
+                <a href="/index.html#services">Services</a>
+              
+            </li>
+            <li class="list">
+                <a href="/aboutus.html">About us</a>
+
+            </li>
+            <li class="list">
+                <a href="#contact us">Contact us</a>
+
+            </li>
+          </ul>
+        </section>
+        <section class="third-contact-container">
+          <h2 class="contact-title">
+            Hours
+          </h2>
+          <div class="contact-3-content">
+            <ul class="lists">
+              <li class="list">Monday:</li>
+              <li class="list">Tuesday:</li>
+              <li class="list">Wednesday:</li>
+              <li class="list">Thursday:</li>
+              <li class="list">Friday:</li>
+            </ul>
+            <ul class="lists">
+              <li class="list">9:00 - 18:00</li>
+              <li class="list">9:00 - 18:00</li>
+              <li class="list">9:00 - 18:00</li>
+              <li class="list">9:00 - 18:00</li>
+              <li class="list">9:00 - 18:00</li>
+
+            </ul>
+          </div>
+        </section>
+        <section class="fourth-contact-container">
+          <h2 class="contact-title">
+            Contact us
+          </h2>
+          <div class="contact-icon">
+            <ul class="lists">
+              <li class="list">
+                    <img src="image/icon1.png" alt="icon1" class="icon">000-000-000
+              </li>
+              <li class="list">
+                    <img src="image/icon2.png" alt="icon2" class="icon">
+                   info@email.com
+              </li>
+              <li class="list">
+                    <img src="image/icon3.png" alt="icon3" class="icon">
+                  Lagos, Nigeria
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+     </section>
+    <!-- Contact Section  -->
+     
   </body>
 </html>
