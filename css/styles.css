@@ -13,7 +13,7 @@
   --border-color: #f1f1f1;
   --text-color: #000000;
   --transition: all 0.3s linear;
-  --max-width: 1170px;
+  --max-width: 1300px;
   --fixed-width: 620px;
   --border-radius: 0.25rem;
 }
@@ -57,8 +57,13 @@ h6 {
 }
 /* Header-styles */
 .header-container {
-  margin-top: 0rem;
-  padding: 1rem 0;
+  padding: 0.7rem 3.3rem;
+  position: sticky;
+  z-index: 1000;
+
+  top: 0;
+  background-color: var(--background-color);
+  width: 100%;
 }
 .head {
   display: flex;
@@ -115,7 +120,10 @@ h6 {
   border: none;
   text-decoration: none;
   border: 2px solid transparent;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
+
 .header-btn-2 {
   box-shadow: 0px 4px 4px 0px #00000040 inset;
   background: linear-gradient(68.08deg, #9083d5 9.64%, #807593 92.49%);
@@ -127,6 +135,12 @@ h6 {
   line-height: 18px;
   color: #ffffff;
   padding: 9px 22px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.header-btn-1,
+.header-btn-2:hover {
+  transform: scale(1.1);
 }
 /* header styles */
 
@@ -288,7 +302,6 @@ h6 {
 .card-bq {
   height: 100%;
   width: 100%;
-  
 }
 .card-1 {
   flex: 1;
@@ -296,22 +309,41 @@ h6 {
   right: 19rem;
   width: 50%;
   margin-left: 2rem;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 .card-2 {
   flex: 1;
   margin-left: -19rem;
   width: 50%;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 .card-3 {
   flex: 1;
   width: 50%;
-   margin-right: 6rem;
-  }
+  margin-right: 6rem;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card-1:hover {
+  transform: scale(1.01, 1.02);
+}
+.card-2:hover {
+  transform: scale(1.01, 1.02);
+}
+.card-3:hover {
+  transform: scale(1.01, 1.02);
+}
+.card-img {
+  border-radius: 10%;
+}
+
 .card-contain {
   box-shadow: -1px 21px 60px 0px #9083d559;
   border-radius: 30px;
   background-color: #fff;
-  padding-bottom: 0.15rem;
+  padding-bottom: 1rem;
 }
 .card-title {
   font-size: 2rem;
@@ -332,13 +364,14 @@ h6 {
 }
 .doctor-img {
   width: 40%;
+  border-radius: 50%;
 }
 .doc-title {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 9px;
 }
 .doc-text {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 9px;
   margin-top: 1rem;
 }
@@ -350,6 +383,7 @@ h6 {
 }
 .doc-content {
   margin-top: 2rem;
+  text-align: left;
 }
 /* Doctors Styles */
 /* Message Styles*/
@@ -365,7 +399,6 @@ h6 {
   flex: 3;
   position: relative;
   left: 10rem;
-
 }
 .left-bq {
   width: 100%;
@@ -380,30 +413,30 @@ h6 {
   gap: 2rem;
   margin-top: 1.5rem;
   height: 3rem;
+
 }
 .message-box {
   margin-top: 1rem;
   border-radius: 5px;
   border: none;
   height: 10rem;
-  width: 62%;
+  
   border: 5px solid #9e9e9e;
   text-align: start;
   justify-content: start;
   padding: 10px 10px;
 }
 .input-group input {
-  padding: 10px 70px;
+  padding: 10px 68px;
   border: none;
   border-radius: 5px;
   border: 5px solid #9e9e9e;
-  
 }
 /* Message Styles*/
 /* Contact Styles */
 .line {
   width: 100%;
-  border: 2px solid #00000080;
+  border: 3px solid #00000080;
 }
 .contact-content {
   display: flex;
@@ -415,8 +448,13 @@ h6 {
 .contact-logo {
   width: 120px;
   margin-left: 1rem;
+  scroll-padding-top: 80px;
 }
-
+.second-contact-container,
+.third-contact-container,
+.fourth-contact-container {
+  margin-top: 1rem;
+}
 .contact-title {
   font-weight: 700;
   font-size: 24px;
@@ -440,6 +478,7 @@ h6 {
 .contact-icon {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 .contact-3-content {
   display: flex;

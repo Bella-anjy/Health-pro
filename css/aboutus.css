@@ -77,7 +77,8 @@
   font-size: 24px;
   line-height: 19px;
 }
-.about-title-2 {
+.about-title-2,
+.about-title-3 {
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
