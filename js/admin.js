@@ -33,8 +33,8 @@ const toggleCodeIcon = () => {
     code.type = "password";
     eyeSlash.style.display = "block";
     eye.style.display = "none";
-
   }
 };
+
 eye.addEventListener("click", toggleCodeIcon);
 eyeSlash.addEventListener("click", toggleCodeIcon);

@@ -71,8 +71,7 @@
   font-size: 29px;
   line-height: 19px;
 }
-.form-text-1,
-.form-text-2 {
+.form-text-1{
   color: #00000080;
   margin-top: 1.5rem;
   font-size: 16px;
@@ -155,9 +154,13 @@
   font-size: 14px;
   margin-bottom: 1.5rem;
 }
+.input{
+  display: flex;
+  gap: 1rem;
+}
 .input-group-5 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -165,6 +168,23 @@
   width: 100%;
   gap: 2rem;
   margin-bottom: 2rem;
+  position: relative;
+  flex: 75%;
+}
+.input-group-6{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+  flex: 25%
+}
+.fa-regular {
+  position: absolute;
+  right: 30px;
 }
 .gender,
 .password,

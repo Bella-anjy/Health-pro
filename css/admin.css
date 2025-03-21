@@ -2,28 +2,28 @@
   margin-right: 8rem;
 }
 /* hero styles start */
-.doctor-hero-container {
+.admin-hero-container {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin-top: 2rem;
 }
-.left-doctor-hero-container {
+.left-admin-hero-container {
   flex: 1;
 }
-.doctor-title {
+.admin-title {
   font-weight: 700;
   font-size: 52px;
   line-height: 60px;
 }
-.doctor-hero-text {
+.admin-hero-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #000000;
   margin-top: 2rem;
 }
-.right-doctor-hero-container {
+.right-admin-hero-container {
   position: absolute;
   top: 0;
   right: 0;
@@ -35,7 +35,7 @@
   justify-content: center;
   z-index: -1;
 }
-.doctor-overlay {
+.admin-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -75,7 +75,7 @@
   color: #00000080;
   margin-top: 1.5rem;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 600;
 }
 .form-text-2 {
@@ -86,7 +86,7 @@
   justify-content: flex-end;
   margin: 0;
 }
-.form-head-btn-2 {
+.form-head-btn-3 {
   background: linear-gradient(68.08deg, #9083d5 9.64%, #807593 92.49%);
   border: none;
   border-radius: 5px;
@@ -100,7 +100,7 @@
   color: #fff;
 }
 .form-head-btn-1,
-.form-head-btn-3 {
+.form-head-btn-2 {
   background: linear-gradient(
     68.08deg,
     rgba(144, 131, 213, 0.25) 9.64%,
@@ -120,83 +120,36 @@
 .form-container {
   margin-top: 4rem;
 }
-.input-group-1,
-.input-group-2,
-.input-group-3,
-.input-group-4 {
-  margin-bottom: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-evenly;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 2rem;
-  width: 100%;
+.form-content {
+  box-shadow: inset;
 }
-.First-name,
-.Last-name,
-.mail,
-.tel,
-.years,
-.msa,
-.mlc,
-.Specialization {
-  height: 3rem;
-  border: 4px solid #9e9e9e;
-  border-radius: 2px;
-  color: #9e9e9e;
-  padding: 5px 15px;
-}
-.address-box {
-  height: 7rem;
-  padding: 4px 5px;
-  width: 100%;
-  border: 4px solid #9e9e9e;
-  color: #9e9e9e;
-  font-size: 14px;
-  margin-bottom: 1.5rem;
-}
-.input {
-  display: flex;
-  gap: 1rem;
-}
-.input-group-6 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  width: 100%;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  position: relative;
-  flex: 75%;
-}
-.input-group-7 {
-  flex: 25%;
+.input-groupe {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
+  margin-top: 1.2rem;
+}
+.input-group-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  margin-top: 1.2rem;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 2rem;
 }
 .fa-regular {
   position: absolute;
-  right: 30px;
+  top: 15px;
+  right: 40px;
+  cursor: pointer;
 }
-.gender,
-.password,
-.confirm-password {
+
+.email,
+.password {
   height: 3rem;
   border: 4px solid #9e9e9e;
-  padding: 5px 15px;
   border-radius: 2px;
-  color: #9e9e9e;
+  padding: 5px 15px;
+  width: 100%;
 }
 .sign-in-button {
   background: linear-gradient(68.08deg, #9083d5 9.64%, #807593 92.49%);
@@ -211,6 +164,7 @@
   line-height: 19px;
   color: #fff;
   padding: 9px 22px;
+  margin-top: 2rem;
 }
 /* contact  */
 /* contact  */
