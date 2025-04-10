@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/doctor.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <!-- header  -->
@@ -53,9 +54,7 @@
           </nav>
         </section>
         <section class="header-right-container">
-          <button class="header-btn-1">
-            <a href="/doctorlogin.html">Sign in</a>
-          </button>
+          <button class="header-btn-1" id="header-register-btn">Sign in</button>
         </section>
       </header>
     </section>
@@ -113,27 +112,36 @@
       <!-- Form head section -->
       <section class="form-container">
         <section class="form-content">
-          <form>
+          <form id="form-submit" novalidate>
             <div class="input-group-1">
               <input
                 type="text"
                 placeholder="First Name"
                 required
                 class="First-name"
+                id="first-name"
               />
               <input
                 type="text"
                 placeholder="Last Name"
                 required
                 class="Last-name"
+                id="last-name"
               />
             </div>
             <div class="input-group-2">
-              <input type="email" placeholder="Email" required class="mail" />
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="mail"
+                id="email"
+              />
               <input
                 type="number"
                 class="tel"
                 placeholder="Mobile Number"
+                id="tel"
                 required
               />
             </div>
@@ -143,12 +151,14 @@
                 placeholder="Medical school attended"
                 required
                 class="msa"
+                id="msa"
               />
               <input
                 type="year"
                 placeholder="Years of experience"
                 required
                 class="years"
+                id="years"
               />
             </div>
             <div class="input-group-4">
@@ -157,8 +167,9 @@
                 placeholder="Medical license number"
                 required
                 class="mlc"
+                id="mlc"
               />
-              <select required class="Specialization">
+              <select required class="Specialization" id="specialty">
                 <option value="" disabled selected>Specialization</option>
                 <option value="Opthalmology">Opthalmology</option>
                 <option value="Pediatrics">Pediatrics</option>
@@ -170,11 +181,13 @@
               </select>
             </div>
             <div class="input-group-5">
-              <textarea name="" id="" class="address-box">Address</textarea>
+              <textarea name="" id="address" class="address-box">
+Address</textarea
+              >
             </div>
             <div class="input">
               <div class="input-group-6">
-                <select class="gender">
+                <select class="gender" id="gender">
                   <option value="" disabled selected>Gender</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
@@ -201,8 +214,13 @@
                 <span id="eye-slash" class="fa-regular fa-eye-slash"></span>
               </div>
             </div>
-            <button class="sign-in-button">
-              <a href="/doctorlogin.html"> Register </a>
+            <button
+              class="sign-in-button"
+              id="login-btn"
+              type="submit"
+              value="submit"
+            >
+              Register
             </button>
           </form>
         </section>
@@ -286,5 +304,6 @@
     <!-- Contact section -->
 
     <script src="js/doctor.js"></script>
+    <script src="js/sweetAlert.js"></script>
   </body>
 </html>

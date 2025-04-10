@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/register.css" />
   </head>
@@ -53,9 +54,7 @@
           </nav>
         </section>
         <section class="header-right-container">
-          <button class="header-btn-1">
-            <a href="/login.html">Sign in</a>
-          </button>
+          <button class="header-btn-1" id="header-register-btn">Sign in</button>
         </section>
       </header>
     </section>
@@ -116,12 +115,13 @@
       <!-- Form head section -->
       <section class="form-container">
         <section class="form-content">
-          <form>
+          <form id="form-submit" novalidate>
             <div class="input-group-1">
               <input
                 type="text"
                 placeholder="First Name"
                 required
+                id="firstname"
                 class="First-name"
               />
               <input
@@ -129,63 +129,83 @@
                 placeholder="Last Name"
                 required
                 class="Last-name"
+                id="lastname"
               />
             </div>
             <div class="input-group-2">
-              <input type="email" placeholder="Email" required class="mail" />
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="mail"
+                id="email"
+              />
               <input
                 type="number"
                 class="tel"
                 placeholder="Mobile Number"
                 required
+                id="tel"
               />
             </div>
             <div class="input-group-3">
-              <input type="text" placeholder="NIC" required class="nic" />
+              <input
+                type="text"
+                placeholder="NIC"
+                required
+                class="nic"
+                id="nic"
+              />
               <input
                 type="date"
                 placeholder="Date of Birth"
                 class="dob"
+                id="dob"
                 required
               />
             </div>
             <div class="input-group-4">
-              <textarea name="" id="" class="address-box">Address</textarea>
+              <textarea name="" id="address" class="address-box">
+Address</textarea
+              >
             </div>
             <div class="input">
-            <div class="input-group-5">
-              <select class="gender">
-                <option value="" disabled selected>Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-              </select>
-              <input
-                type="password"
-                required
-                placeholder="Password"
-                class="password"
-                id="passcode"
-              />
+              <div class="input-group-5">
+                <select class="gender" id="gender">
+                  <option value="" disabled selected>Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+                <input
+                  type="password"
+                  required
+                  placeholder="Password"
+                  class="password"
+                  id="passcode"
+                />
                 <span id="fa-eye" class="fa-regular fa-eye"></span>
                 <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
-                
-            </div>
-            <div class="input-group-6">
-              <input
-                type="password"
-                required
-                placeholder="Confirm password"
-                class="confirm-password"
-                id="code"
-              />
+              </div>
+              <div class="input-group-6">
+                <input
+                  type="password"
+                  required
+                  placeholder="Confirm password"
+                  class="confirm-password"
+                  id="code"
+                />
                 <span id="eye" class="fa-regular fa-eye"></span>
                 <span id="eye-slash" class="fa-regular fa-eye-slash"></span>
-               
-            </div>
+              </div>
             </div>
 
-            <button class="sign-in-button">
-              <a href="/login.html"> Register </a>
+            <button
+              type="submit"
+              value="submit"
+              class="sign-in-button"
+              id="login-btn"
+            >
+              Register
             </button>
           </form>
         </section>
@@ -268,8 +288,7 @@
     </section>
     <!-- Contact section -->
 
-
-
     <script src="js/register.js"></script>
+    <script src="js/sweetAlert.js"></script>
   </body>
 </html>
