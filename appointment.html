@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/appointment.css" />
   </head>
@@ -103,41 +104,44 @@
     <section class="form-section container">
       <h2 class="form-title">Appointment</h2>
       <section class="form-container">
-        <form>
+        <form id="form-submit" novalidate>
           <div class="input-group-1">
             <input
               type="text"
               required
               placeholder="First Name"
               class="First-Name"
+              id="firstname"
             />
             <input
               type="text"
               required
               placeholder="Last Name"
               class="Last-Name"
+              id="lastname"
             />
           </div>
           <div class="input-group-2">
-            <input type="email" placeholder="Email" required class="mail" />
+            <input type="email" placeholder="Email" required class="mail" id="email" />
             <input
               type="number"
               class="tel"
               placeholder="Mobile Number"
               required
+              id="tel"
             />
           </div>
           <div class="input-group-3">
-            <input type="text" placeholder="NIC" required class="nic" />
+            <input type="text" placeholder="NIC" required class="nic" id="nic" />
             <input
               type="date"
               placeholder="Date of Birth"
-              class="dob"
+              class="dob" id="dob"
               required
             />
           </div>
           <div class="input-group-4">
-            <select class="gender">
+            <select class="gender" id="gender">
               <option value="" disabled selected>Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
@@ -147,16 +151,18 @@
               required
               placeholder="Appointment Date"
               class="Appointment-date"
+              id="appdate"
             />
             <input
               type="time"
               required
               placeholder="Appointment Time"
               class="Appointment-Time"
+              id="apptime"
             />
           </div>
           <div class="input-group-5">
-            <select required class="Department">
+            <select required class="Department" id="dept">
               <option value="" disabled selected>Department Name</option>
               <option value="Opthalmologist">Opthalmologist</option>
               <option value="Pediatrician">Pediatrician</option>
@@ -167,7 +173,7 @@
               <option value="Psychiatrist">Psychiatrist</option>
               <option value="Nephrologist">Nephrologist</option>
             </select>
-            <select required class="Doctor-Name">
+            <select required class="Doctor-Name" id="docname">
               <option value="" disabled selected>Doctor Name</option>
               <option value="Dr. Aliyah Rae">Dr. Aliyah Rae</option>
               <option value="Dr. Nyla Mae">Dr. Nyla Mae</option>
@@ -180,9 +186,9 @@
             </select>
           </div>
           <div class="input-group-6">
-            <textarea name="" id="" class="address-box">Address</textarea>
+            <textarea name="" id="address" class="address-box">Address</textarea>
           </div>
-          <button class="register-button">Register</button>
+          <button class="register-button" id="login-btn">Register</button>
         </form>
       </section>
     </section>
@@ -262,5 +268,8 @@
       </section>
     </section>
     <!-- Contact Section  -->
+
+    <script src="js/appointment.js"></script>
+    <script src="js/sweetAlert.js"></script>
   </body>
 </html>

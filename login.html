@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/login.css" />
   </head>
@@ -53,8 +54,8 @@
           </nav>
         </section>
         <section class="header-right-container">
-          <button class="header-btn-2">
-            <a href="/register.html">Register</a>
+          <button class="header-btn-2" id="header-login-btn">
+            Register
           </button>
         </section>
       </header>
@@ -114,9 +115,9 @@
       <!-- Form head section -->
       <section class="form-container">
         <section class="form-content">
-          <form>
+          <form id="form-submit" novalidate>
             <div class="input-groupe">
-              <input type="email" placeholder="Email" required class="email" />
+              <input type="email" placeholder="Email" id="email" required class="email" />
             </div>
             <div class="input-group-2">
               <input
@@ -140,7 +141,9 @@
               <span id="eye" class="fa-regular fa-eye"></span>
               <span id="eye-slash" class="fa-regular fa-eye-slash"></span>
             </div>
-            <button class="sign-in-button">Sign in</button>
+          
+            <button type="submit" value="submit" class="sign-in-button" id="login-btn">Sign in</button>
+            
           </form>
         </section>
       </section>
@@ -223,5 +226,6 @@
     <!-- Contact section -->
 
     <script src="js/login.js"></script>
+    <script src="js/sweetalert.js"></script>
   </body>
 </html>

@@ -17,11 +17,7 @@
   --fixed-width: 620px;
   --border-radius: 0.25rem;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -278,12 +274,7 @@ h6 {
 }
 /* About Styles*/
 /* Service Styles*/
-.service-content {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-top: -10rem;
-}
+
 .service-title,
 .doctors-title,
 .message-title {
@@ -295,61 +286,72 @@ h6 {
   margin-bottom: 2rem;
 }
 .card-bq-content {
-  flex: 1;
   position: relative;
-  margin-top: -12rem;
+  flex: 1;
+  margin-top: -15rem;
+  width: auto;
 }
 .card-bq {
   height: 100%;
   width: 100%;
+  max-width: 30%;
 }
-.card-1 {
-  flex: 1;
-  position: relative;
-  right: 19rem;
-  width: 50%;
-  margin-left: 2rem;
-  transition: transform 0.3s ease-in-out;
+.service-container {
+  display: flex;
+  align-items: center;
+  margin-top: -8rem;
+}
+/* cards */
+.cards {
+  margin-bottom: 2rem;
+  /* width: 5%; */
+}
+/* card */
+.card {
+  height: 300px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: -1px 21px 60px 0px #9083d559;
+  overflow: hidden;
+  transition: all 0.3s ease;
   cursor: pointer;
-}
-.card-2 {
-  flex: 1;
-  margin-left: -19rem;
-  width: 50%;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-.card-3 {
-  flex: 1;
-  width: 50%;
-  margin-right: 6rem;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-}
-.card-1:hover {
-  transform: scale(1.01, 1.02);
-}
-.card-2:hover {
-  transform: scale(1.01, 1.02);
-}
-.card-3:hover {
-  transform: scale(1.01, 1.02);
-}
-.card-img {
-  border-radius: 10%;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  width: 80%;
 }
 
-.card-contain {
-  box-shadow: -1px 21px 60px 0px #9083d559;
-  border-radius: 30px;
-  background-color: #fff;
-  padding-bottom: 1rem;
+/* .card:hover {
+  transform: translateY(-10px);
+} */
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
-.card-title {
-  font-size: 2rem;
-  font-weight: bold;
+.card h3 {
+  font-size: 1.5rem;
+  margin: 0 3rem;
   text-align: center;
 }
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  background: #9083d5;
+  color: #ffffff;
+}
+.slider-button {
+  display: none;
+}
+.slider-container {
+  flex: 3;
+  position: absolute;
+  margin-left: 3rem;
+}
+
 /* Service Styles*/
 /* Doctors Styles */
 .doctor-content {
@@ -413,24 +415,24 @@ h6 {
   gap: 2rem;
   margin-top: 1.5rem;
   height: 3rem;
-
 }
 .message-box {
   margin-top: 1rem;
   border-radius: 5px;
   border: none;
   height: 10rem;
-  
+  width: 100%;
   border: 5px solid #9e9e9e;
   text-align: start;
   justify-content: start;
   padding: 10px 10px;
 }
 .input-group input {
-  padding: 10px 68px;
+  padding: 10px 6px;
   border: none;
   border-radius: 5px;
   border: 5px solid #9e9e9e;
+  width: 50%;
 }
 /* Message Styles*/
 /* Contact Styles */
@@ -485,3 +487,6 @@ h6 {
   gap: 2rem;
 }
 /* Contact Styles end */
+
+
+

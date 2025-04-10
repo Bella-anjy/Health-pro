@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/doctorlogin.css" />
   </head>
@@ -53,9 +54,7 @@
           </nav>
         </section>
         <section class="header-right-container">
-          <button class="header-btn-2">
-            <a href="/doctor.html">Register</a>
-          </button>
+          <button class="header-btn-2" id="header-login-btn">Register</button>
         </section>
       </header>
     </section>
@@ -116,40 +115,57 @@
       <!-- Form head section -->
       <section class="form-container">
         <section class="form-content">
-          <form>
+          <form id="form-submit" novalidate>
             <div class="input-group-1">
-              <input type="text" class="id" placeholder="Staff ID" required />
+              <input
+                type="text"
+                class="id"
+                id="staffid"
+                placeholder="Staff ID"
+                required
+              />
             </div>
             <div class="input-group-2">
-              <input type="email" placeholder="Email" required class="mail" />
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                class="mail"
+                id="email"
+              />
             </div>
             <div class="input">
-            <div class="input-group-3">
-              <input
-                type="password"
-                required
-                placeholder="Password"
-                class="password"
-                id="passcode"
-              />
+              <div class="input-group-3">
+                <input
+                  type="password"
+                  required
+                  placeholder="Password"
+                  class="password"
+                  id="passcode"
+                />
                 <span id="fa-eye" class="fa-regular fa-eye"></span>
                 <span id="fa-eye-slash" class="fa-regular fa-eye-slash"></span>
-               
-            </div>
-            <div class="input-group-4">
-              <input
-                type="password"
-                required
-                placeholder="Confirm password"
-                class="confirm-password"
-                id="code"
-              />
+              </div>
+              <div class="input-group-4">
+                <input
+                  type="password"
+                  required
+                  placeholder="Confirm password"
+                  class="confirm-password"
+                  id="code"
+                />
                 <span id="eye" class="fa-regular fa-eye"></span>
                 <span id="eye-slash" class="fa-regular fa-eye-slash"></span>
-                
+              </div>
             </div>
-            </div>
-            <button class="sign-in-button">Sign in</button>
+            <button
+              type="submit"
+              value="submit"
+              class="sign-in-button"
+              id="login-btn"
+            >
+              Sign in
+            </button>
           </form>
         </section>
       </section>
@@ -231,9 +247,7 @@
     </section>
     <!-- Contact section -->
 
-
-
-
     <script src="js/doctorlogin.js"></script>
+    <script src="js/sweetAlert.js"></script>
   </body>
 </html>

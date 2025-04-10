@@ -1,10 +1,12 @@
-// Select password input and icons
+// Select password input and icons for both password fields
 const passCode = document.getElementById("passcode");
 const faEye = document.getElementById("fa-eye");
 const faEyeSlash = document.getElementById("fa-eye-slash");
+const passConfirm = document.getElementById("code"); // Confirm password input
+const faEyeConfirm = document.getElementById("eye");
+const faEyeSlashConfirm = document.getElementById("eye-slash");
 
-// input password field
-
+// Toggle password visibility for "passcode"
 const togglePasswordIcon = () => {
   if (passCode.type === "password") {
     passCode.type = "text";
@@ -16,24 +18,150 @@ const togglePasswordIcon = () => {
     faEye.style.display = "none";
   }
 };
-// togglePasswordIcon()
 faEye.addEventListener("click", togglePasswordIcon);
 faEyeSlash.addEventListener("click", togglePasswordIcon);
 
-const code = document.getElementById("code");
-const eye = document.getElementById("eye");
-const eyeSlash = document.getElementById("eye-slash");
-
-const toggleCodeIcon = () => {
-  if (code.type === "password") {
-    code.type = "text";
-    eyeSlash.style.display = "none";
-    eye.style.display = "block";
+// Toggle password visibility for "confirm password"
+const toggleConfirmPasswordIcon = () => {
+  if (passConfirm.type === "password") {
+    passConfirm.type = "text";
+    faEyeSlashConfirm.style.display = "none";
+    faEyeConfirm.style.display = "block";
   } else {
-    code.type = "password";
-    eyeSlash.style.display = "block";
-    eye.style.display = "none";
+    passConfirm.type = "password";
+    faEyeSlashConfirm.style.display = "block";
+    faEyeConfirm.style.display = "none";
   }
 };
-eye.addEventListener("click", toggleCodeIcon);
-eyeSlash.addEventListener("click", toggleCodeIcon);
+faEyeConfirm.addEventListener("click", toggleConfirmPasswordIcon);
+faEyeSlashConfirm.addEventListener("click", toggleConfirmPasswordIcon);
+
+// Accessing the input fields
+const firstName = document.getElementById("firstname");
+const lastName = document.getElementById("lastname");
+const email = document.getElementById("email");
+const tel = document.getElementById("tel");
+const address = document.getElementById("address");
+const nic = document.getElementById("nic");
+const dob = document.getElementById("dob");
+const gender = document.getElementById("gender");
+const password = document.getElementById("passcode");
+const confirmPassword = document.getElementById("code");
+const formSubmit = document.getElementById("form-submit");
+
+// Handle form submission
+const handleSubmit = (e) => {
+  e.preventDefault();
+  // Getting the values of the input fields
+  const firstNameValue = firstName.value;
+  const lastNameValue = lastName.value;
+  const emailValue = email.value;
+  const passwordValue = password.value;
+  const confirmPasswordValue = confirmPassword.value;
+  const genderValue = gender.value;
+  const telValue = tel.value;
+  const addressValue = address.value;
+  const nicValue = nic.value;
+  const dobValue = dob.value;
+
+  // Saving the data to local storage
+  localStorage.setItem("firstName", firstNameValue);
+  localStorage.setItem("lastName", lastNameValue);
+  localStorage.setItem("email", emailValue);
+  localStorage.setItem("password", passwordValue);
+  localStorage.setItem("confirmPassword", confirmPasswordValue);
+  localStorage.setItem("gender", genderValue);
+  localStorage.setItem("tel", telValue);
+  localStorage.setItem("address", addressValue);
+  localStorage.setItem("nic", nicValue);
+  localStorage.setItem("dob", dobValue);
+
+  // Validation for empty fields
+  if (
+    firstNameValue === "" ||
+    lastNameValue === "" ||
+    emailValue === "" ||
+    passwordValue === "" ||
+    confirmPasswordValue === "" ||
+    telValue === "" ||
+    addressValue === "" ||
+    nicValue === "" ||
+    dobValue === ""
+  ) {
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Please fill in all fields",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    return; // Stop further execution if any field is empty
+  }
+
+  // Password length validation
+  else if (passwordValue.length < 8 || passwordValue.length > 20) {
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Password must be between 8 and 20 characters",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    return; // Stop further execution if password length is invalid
+  }
+
+  // Password match validation
+  else if (passwordValue !== confirmPasswordValue) {
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Passcode does not match",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    return; // Stop further execution if passwords do not match
+  }
+
+  // If everything is valid, display success message and redirect
+  Swal.fire({
+    position: "center",
+    icon: "success",
+    title: "Registration Successful",
+    showConfirmButton: false,
+    timer: 1500,
+  });
+
+  setTimeout(() => {
+    window.location.href = "login.html"; // Redirect to login page after successful registration
+  }, 3000);
+};
+
+// Add event listener to the form submit
+formSubmit.addEventListener("submit", handleSubmit);
+
+// Handle the header register button click event (e.g., if user wants to go back to register page)
+const headerRegisterBtn = document.getElementById("header-register-btn");
+headerRegisterBtn.addEventListener("click", (e) => {
+  // Check if the form is empty
+  if (
+    firstName.value === "" ||
+    lastName.value === "" ||
+    email.value === "" ||
+    password.value === "" ||
+    confirmPassword.value === "" ||
+    tel.value === "" ||
+    address.value === "" ||
+    nic.value === "" ||
+    dob.value === ""
+  ) {
+    // Display the alert if form is incomplete
+    Swal.fire({
+      position: "center",
+      icon: "error",
+      title: "Empty Form, Please Register before Signing in",
+      showConfirmButton: true,
+    });
+    console.log("Form not filled out, alert displayed");
+    return; // Stop navigation if form is not filled
+  }
+});
