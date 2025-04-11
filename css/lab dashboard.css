@@ -1,0 +1,58 @@
+/* lab dashoard styles */
+/* Main content */
+/* second lab dashboard container */
+.second-lab-dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.lab-head {
+  padding: 0.5rem;
+}
+.lab-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* third lab dashboard container */
+.third-lab-dashboard-container {
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.lab-text-2{
+  font-size: 20px;
+  margin-top: 0.7rem;
+  font-weight: 500;
+}
+.table {
+  padding: 1rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr,
+th,
+td {
+  text-align: left;
+  padding: 1rem;
+}
+th,
+td {
+  font-size: 16px;
+  font-weight: 700;
+}
+.tr-2 {
+  background-color: #f4f4f4;
+}
+.delete{
+  width: 2px;
+}
+.pen{
+  color: #9083d5;
+}
+.delete{
+  color: #ff0000
+}

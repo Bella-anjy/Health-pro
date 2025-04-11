@@ -4,8 +4,7 @@ const faEye = document.getElementById("fa-eye");
 const faEyeSlash = document.getElementById("fa-eye-slash");
 const loginBtn = document.getElementById("login-btn");
 
-// input password field
-
+// Input password field toggle functionality
 const togglePasswordIcon = () => {
   if (passCode.type === "password") {
     passCode.type = "text";
@@ -17,7 +16,7 @@ const togglePasswordIcon = () => {
     faEye.style.display = "none";
   }
 };
-// togglePasswordIcon()
+
 faEye.addEventListener("click", togglePasswordIcon);
 faEyeSlash.addEventListener("click", togglePasswordIcon);
 
@@ -25,6 +24,7 @@ const code = document.getElementById("code");
 const eye = document.getElementById("eye");
 const eyeSlash = document.getElementById("eye-slash");
 
+// Confirm password toggle functionality
 const toggleCodeIcon = () => {
   if (code.type === "password") {
     code.type = "text";
@@ -40,22 +40,13 @@ const toggleCodeIcon = () => {
 eye.addEventListener("click", toggleCodeIcon);
 eyeSlash.addEventListener("click", toggleCodeIcon);
 
-// Accessing the input elementby ID
-
+// Accessing input elements by ID
 const email = document.getElementById("email");
 const password = document.getElementById("passcode");
 const passward = document.getElementById("code");
-// const submitButton = document.getElementById("reg-btn");
 const formSubmit = document.getElementById("form-submit");
 
-// form submission
-
-// saving the data to local storage
-localStorage.getItem("email");
-localStorage.getItem("password");
-localStorage.getItem("passward");
-
-// validating the data
+// Form submission and validation
 const handleSubmit = (e) => {
   e.preventDefault();
 
@@ -93,11 +84,16 @@ const handleSubmit = (e) => {
     });
     return;
   }
+
+  // Set the admin role in local storage here
+  localStorage.setItem("userRole", "admin");
+
   loginBtn.classList.add("loading");
   setTimeout(() => {
-    window.location.href = "dashboard.html";
+    window.location.href = "dashboard.html"; // Redirect to the dashboard
   }, 3000);
 };
+
 // Adding event listener to the form submit button
 formSubmit.addEventListener("submit", handleSubmit);
 

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthPro | Dashboard Page</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <div class="nav">
+              <div class="toggle-btn" id="toggleNav">
+                <span class="fa-solid fa-bars" id="fa-bars"></span>
+              </div>
+            </div>
+            <nav id="sidebar">
+              <ul class="sidebar-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="/lab dashboard.html">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="/ward dashboard.html">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/treatment dashboard.html">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+                <li class="sidebar-list">
+                  <button class="dashboard-btn" id="logout">Logout</button>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Overall Dashboard
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-dashboard-main-content">
+            <section class="cards">
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img1.png" alt="card-img" />
+                  <h3>
+                    Total
+                    <br />
+                    Patient
+                  </h3>
+                </div>
+                <h4 class="card-num">168</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img2.png" alt="card-img" />
+                  <h3>
+                    Total
+                    <br />
+                    Doctors
+                  </h3>
+                </div>
+                <h4 class="card-num">65</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img3.png" alt="card-img" />
+                  <h3>
+                    Total
+                    <br />
+                    Wards
+                  </h3>
+                </div>
+                <h4 class="card-num">290</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img4.png" alt="card-img" />
+                  <h3>
+                    Total
+                    <br />
+                    Labs
+                  </h3>
+                </div>
+                <h4 class="card-num">50</h4>
+              </div>
+            </section>
+          </section>
+          <section class="second-dashboard-main-content">
+            <section class="second-dashboard-content-1">
+              <div class="second-dashboard-content-1-header">
+                <h2>Patients</h2>
+                <p>
+                  7 days
+                  <img
+                    src="image/second-dashboard-img1.png"
+                    alt="arrow"
+                    class="arrow"
+                  />
+                </p>
+              </div>
+              <hr class="line" />
+              <p class="chart-text">02.04.2025 - 09.04.2025</p>
+              <div class="chart-container">
+                <canvas id="lineChart"></canvas>
+              </div>
+              <hr class="line" />
+              <div class="graph-texts">
+                <div class="graph-text-1">
+                  <h2>All time</h2>
+                  <h2>30 days</h2>
+                  <h2>7 days</h2>
+                </div>
+                <div class="graph-text-2">
+                  <h2>41 234</h2>
+                  <h2>41 234</h2>
+                  <h2>41 234</h2>
+                </div>
+              </div>
+            </section>
+            <section class="second-dashboard-content-2">
+              <section class="slider">
+                <div class="second-dashboard-content-2-header">
+                  <h2>Appointments</h2>
+                  <p>Two Tab</p>
+                  <section class="overlay">
+                    <div class="first-overlay">
+                      <img
+                        src="image/doc-table-img.png"
+                        alt="trash-img"
+                        class="trash-img"
+                      />
+                      <h3 class="trash-text">Reject</h3>
+                    </div>
+                    <div class="second-overlay">
+                      <span class="fa-solid fa-check"></span>
+                      <h3 class="accept-text">Accept</h3>
+                    </div>
+                  </section>
+                </div>
+                <hr class="line" />
+                <!-- Number input to control slides -->
+
+                <!-- Slides container -->
+                <div id="sliderSlides">
+                  <!-- Slide 1 -->
+                  <div class="slide" id="slide1">
+                    <table>
+                      <!-- Table head -->
+                      <thead class="table-head">
+                        <tr class="tr-1">
+                          <th class="angle-body">
+                            First name Last name
+                            <div class="angle">
+                              <span
+                                class="fa-solid fa-angle-up"
+                                id="fa-angle-up"
+                              ></span
+                              ><span class="fa-solid fa-angle-down"></span>
+                            </div>
+                          </th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <!-- Table head -->
+                      <!-- Table data -->
+                      <div class="table-row">
+                        <tr class="tr-2">
+                          <td>Chance Vaccaro</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+
+                        <tr>
+                          <td>Desirae Kenter</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <tr class="tr-2">
+                          <td>Paityn Lubin</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr>
+                          <td>Philip Bator</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr class="tr-2">
+                          <td>Emerson Stanton</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-1">Accept</button></td>
+                        </tr>
+                        <tr>
+                          <td>Alfredo Rhiel Madsen</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <!-- Table data -->
+                      </div>
+                    </table>
+                    <hr class="line" />
+                    <!-- Navigation buttons (1, 2, 3, 4) -->
+                    <div class="slideBtn-container">
+                      <button class="slideBtn" data-slide="1">1</button>
+                      <button class="slideBtn" data-slide="2">2</button>
+                      <button class="slideBtn" data-slide="3">3</button>
+                      <button class="slideBtn" data-slide="4">4</button>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="slide" id="slide2" style="display: none">
+                    <table>
+                      <!-- Table head -->
+                      <thead class="table-head">
+                        <tr class="tr-1">
+                          <th class="angle-body">
+                            First name Last name
+                            <div class="angle">
+                              <span
+                                class="fa-solid fa-angle-up"
+                                id="fa-angle-up"
+                              ></span
+                              ><span class="fa-solid fa-angle-down"></span>
+                            </div>
+                          </th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <!-- Table head -->
+                      <!-- Table data -->
+                      <div class="table-row">
+                        <tr class="tr-5">
+                          <td>Ismail Vaccaro</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+
+                        <tr>
+                          <td>Alimi Kehinde</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <tr class="tr-5">
+                          <td>Ajibad Nelson</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr>
+                          <td>David Iyke</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr class="tr-5">
+                          <td>Emerson Stanton</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-1">Accept</button></td>
+                        </tr>
+                        <tr>
+                          <td>Alfredo Rhiel Madsen</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <!-- Table data -->
+                      </div>
+                    </table>
+                    <hr class="line" />
+                    <!-- Navigation buttons (1, 2, 3, 4) -->
+                    <div class="slideBtn-container">
+                      <button class="slideBtn" data-slide="1">1</button>
+                      <button class="slideBtn" data-slide="2">2</button>
+                      <button class="slideBtn" data-slide="3">3</button>
+                      <button class="slideBtn" data-slide="4">4</button>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="slide" id="slide3" style="display: none">
+                    <table>
+                      <!-- Table head -->
+                      <thead class="table-head">
+                        <tr class="tr-1">
+                          <th class="angle-body">
+                            First name Last name
+                            <div class="angle">
+                              <span
+                                class="fa-solid fa-angle-up"
+                                id="fa-angle-up"
+                              ></span
+                              ><span class="fa-solid fa-angle-down"></span>
+                            </div>
+                          </th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <!-- Table head -->
+                      <!-- Table data -->
+                      <div class="table-row">
+                        <tr class="tr-4">
+                          <td>Chance Vaccaro</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+
+                        <tr>
+                          <td>Desirae Kenter</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <tr class="tr-4">
+                          <td>Paityn Lubin</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr>
+                          <td>Philip Bator</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr class="tr-4">
+                          <td>Emerson Stanton</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-1">Accept</button></td>
+                        </tr>
+                        <tr>
+                          <td>Alfredo Rhiel Madsen</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <!-- Table data -->
+                      </div>
+                    </table>
+                    <hr class="line" />
+                    <!-- Navigation buttons (1, 2, 3, 4) -->
+                    <div class="slideBtn-container">
+                      <button class="slideBtn" data-slide="1">1</button>
+                      <button class="slideBtn" data-slide="2">2</button>
+                      <button class="slideBtn" data-slide="3">3</button>
+                      <button class="slideBtn" data-slide="4">4</button>
+                    </div>
+                  </div>
+                  <!-- Slide 4 -->
+                  <div class="slide" id="slide4" style="display: none">
+                    <table>
+                      <!-- Table head -->
+                      <thead class="table-head">
+                        <tr class="tr-1">
+                          <th class="angle-body">
+                            First name Last name
+                            <div class="angle">
+                              <span
+                                class="fa-solid fa-angle-up"
+                                id="fa-angle-up"
+                              ></span
+                              ><span class="fa-solid fa-angle-down"></span>
+                            </div>
+                          </th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <!-- Table head -->
+                      <!-- Table data -->
+                      <div class="table-row">
+                        <tr class="tr-3">
+                          <td>Chance Vaccao</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+
+                        <tr>
+                          <td>Desire Kantae</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <tr class="tr-3">
+                          <td>Patrick Lubin</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr>
+                          <td>Philip Batoryn</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-3">Pending</button></td>
+                        </tr>
+                        <tr class="tr-3">
+                          <td>Thompson Stanton</td>
+                          <td>10.01.2003 12:54</td>
+                          <td><button class="tr-btn-1">Accept</button></td>
+                        </tr>
+                        <tr>
+                          <td>Rhiel Madsen</td>
+                          <td>04.12.2003 03:21</td>
+                          <td><button class="tr-btn-2">Rejected</button></td>
+                        </tr>
+                        <!-- Table data -->
+                      </div>
+                    </table>
+                    <hr class="line" />
+                    <!-- Navigation buttons (1, 2, 3, 4) -->
+                    <div class="slideBtn-container">
+                      <button class="slideBtn" data-slide="1">1</button>
+                      <button class="slideBtn" data-slide="2">2</button>
+                      <button class="slideBtn" data-slide="3">3</button>
+                      <button class="slideBtn" data-slide="4">4</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </section>
+          <section class="third-dashboard-main-content">
+            <h2>Recent Doctors</h2>
+            <p class="dashboard-text">
+              A list of Doctors, including names, roles, departments, and
+              consultancy fee.
+            </p>
+            <table id="data-table">
+              <!-- Table head -->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Mobile</th>
+                  <th>Adress</th>
+                  <th>Consultancy</th>
+                  <th>Education</th>
+                  <th>DOB</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table head -->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Nyla Mae</td>
+                  <td>07855533211</td>
+                  <td>Lagos</td>
+                  <td>2500.00</td>
+                  <td>MBBS</td>
+                  <td>1954-04-13</td>
+                  <td><button class="tr-btn-1">Online</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>John Doe</td>
+                  <td>07247583296</td>
+                  <td>Surulere</td>
+                  <td>2500.00</td>
+                  <td>Phd</td>
+                  <td>1978-05-15</td>
+                  <td><button class="tr-btn-2">Offline</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>David Iyke</td>
+                  <td>07645231987</td>
+                  <td>Badagry</td>
+                  <td>2500.00</td>
+                  <td>Bsc</td>
+                  <td>1992-08-28</td>
+                  <td><button class="tr-btn-1">Online</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Aliyah Rae</td>
+                  <td>09789871256</td>
+                  <td>Lekki</td>
+                  <td>3000.00</td>
+                  <td>Bsc</td>
+                  <td>2000-08-25</td>
+                  <td><button class="tr-btn-2">Offline</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+              </div>
+
+              <!-- Table data -->
+            </table>
+            <div id="undo-btn" style="display: none">
+              <button class="undo-btn" onclick="undoDelete()">
+                Undo Delete
+              </button>
+            </div>
+          </section>
+          <section class="fourth-dashboard-main-content">
+            <h2>Out of stock</h2>
+            <p class="dashboard-text">
+              A list of drugs currently out of stock, including drug names,
+              categories, last restock dates, and expected availability.
+            </p>
+
+            <table>
+              <!-- Table head -->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Drug Name</th>
+                  <th>Expiry Date</th>
+                  <th>Manufacture Date</th>
+                  <th>Price</th>
+                  <th>QTY</th>
+                </tr>
+              </thead>
+              <!-- Table head -->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Vitamin C</td>
+                  <td>2029-03-24</td>
+                  <td>1856-04-16</td>
+                  <td>1500.00</td>
+                  <td>150</td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>Paracetamol</td>
+                  <td>2026-09-18</td>
+                  <td>2021-01-19</td>
+                  <td>4500.00</td>
+                  <td>360</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Augumentin</td>
+                  <td>2025-12-04</td>
+                  <td>1992-09-05</td>
+                  <td>20000.00</td>
+                  <td>65</td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Ampicillin</td>
+                  <td>2027-09-23</td>
+                  <td>2023-05-30</td>
+                  <td>5400.00</td>
+                  <td>225</td>
+                </tr>
+              </div>
+            </table>
+          </section>
+        </section>
+        <!-- DASHBOARD CONTENT -->
+      </section>
+    </section>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/sweetAlert.js"></script>
+  </body>
+</html>

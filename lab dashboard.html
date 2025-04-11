@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthPro | Lab Dashboard Page</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/lab dashboard.css" />
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <div class="nav">
+              <div class="toggle-btn" id="toggleNav">
+                <span class="fa-solid fa-bars" id="fa-bars"></span>
+              </div>
+            </div>
+            <nav id="sidebar">
+              <ul class="sidebar-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="/lab dashboard.html">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="/ward dashboard.html">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/treatment dashboard.html">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Lab
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-dashboard-main-content">
+            <section class="cards">
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img4.png" alt="card-img" />
+                  <h3>
+                    Blood
+                    <br />
+                    Lab
+                  </h3>
+                </div>
+                <h4 class="card-num">Lab 168</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img4.png" alt="card-img" />
+                  <h3>
+                    Radiology
+                    <br />
+                    Lab
+                  </h3>
+                </div>
+                <h4 class="card-num">Lab 65</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img4.png" alt="card-img" />
+                  <h3>
+                    Nephrology
+                    <br />
+                    Unit
+                  </h3>
+                </div>
+                <h4 class="card-num">Lab 290</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img4.png" alt="card-img" />
+                  <h3>
+                    Genetics
+                    <br />
+                    Lab
+                  </h3>
+                </div>
+                <h4 class="card-num">Lab 50</h4>
+              </div>
+            </section>
+          </section>
+          <section class="second-lab-dashboard-container">
+            <div class="lab-head">
+              <h2 class="lab-title">Lab Management</h2>
+            </div>
+          </section>
+          <section class="third-lab-dashboard-container">
+            <h2>Recent Lab Patients</h2>
+            <p class="lab-text-2">
+              A summary of past lab patients, detailing doctor names, lab rooms,
+              amounts, and payment statuses.
+            </p>
+            <table id="data-table">
+              <!-- Table Head-->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Patient Name</th>
+                  <th>Lab Name</th>
+                  <th>Lab Room</th>
+                  <th>Doctor Name</th>
+                  <th>Treatment</th>
+                  <th>Total Amount</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table Head-->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Nike Adeleke</td>
+                  <td>Blood Lab</td>
+                  <td>168</td>
+                  <td>Dr. Akin Noah</td>
+                  <td>Blood Test</td>
+                  <td>250000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>Wizkid Ayo</td>
+                  <td>Radiology Laboratory</td>
+                  <td>65</td>
+                  <td>Dr. Bella Lia</td>
+                  <td>Cancer Test</td>
+                  <td>890000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Alfred Lawson</td>
+                  <td>Genetics Laboratory</td>
+                  <td>50</td>
+                  <td>Dr. Maria Joe</td>
+                  <td>DNA Test</td>
+                  <td>350000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Max Adewunmi</td>
+                  <td>Nephrology Unit</td>
+                  <td>290</td>
+                  <td>Dr. Daniel Doe</td>
+                  <td>Dialysis</td>
+                  <td>120000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Feranmi Judah</td>
+                  <td>Immunology Laboratory</td>
+                  <td>224</td>
+                  <td>Dr. Fathia Jude</td>
+                  <td>Rubella Test</td>
+                  <td>900000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>6</td>
+                  <td>Ajibade John</td>
+                  <td>Pathology Laboratory</td>
+                  <td>123</td>
+                  <td>Dr. Freda Tomiwa</td>
+                  <td>Biopsy Analysis</td>
+                  <td>730000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Kolawale Frank</td>
+                  <td>Urinalysis Laboratory</td>
+                  <td>289</td>
+                  <td>Dr. Kia Jude</td>
+                  <td>Routine Urinalysis</td>
+                  <td>900000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>8</td>
+                  <td>Ajayi Maria</td>
+                  <td>Cytogenetics Laboratory</td>
+                  <td>84</td>
+                  <td>Dr. Karen</td>
+                  <td>Karotyping</td>
+                  <td>20000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Olubiyo Anu</td>
+                  <td>Toxicology Laboratory</td>
+                  <td>50</td>
+                  <td>Dr. Clara Mae</td>
+                  <td>TDM</td>
+                  <td>100000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>10</td>
+                  <td>Ishola Rodiat</td>
+                  <td>Endocrinology Laboratory</td>
+                  <td>30</td>
+                  <td>Dr. Abosede</td>
+                  <td>Thyroid Panel</td>
+                  <td>50000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Adelabi Tomiwa</td>
+                  <td>Andrology Laboratory</td>
+                  <td>45</td>
+                  <td>Dr. Fathia Jude</td>
+                  <td>Semen Analysis</td>
+                  <td>2000000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>12</td>
+                  <td>Abiodun Tobi</td>
+                  <td>Mycology Laboratory</td>
+                  <td>224</td>
+                  <td>Dr. Toluwanimi</td>
+                  <td>KOH Count</td>
+                  <td>900000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Alabi Judah</td>
+                  <td>Virology Laboratory</td>
+                  <td>70</td>
+                  <td>Dr. John Paul</td>
+                  <td>Covid-19 Testing</td>
+                  <td>600000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+              </div>
+              <!-- Table data -->
+            </table>
+              <div id="undo-btn" style="display: none">
+              <button class="undo-btn" onclick="undoDelete()">
+                Undo Delete
+              </button>
+            </div>
+          </section>
+          <!-- DASHBOARD CONTENT -->
+        </section>
+      </section>
+    </section>
+    <script src="js/lab dashboard.js"></script>
+  </body>
+</html>

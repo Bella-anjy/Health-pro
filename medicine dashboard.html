@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <title>healthPro | Medicine Dashboard Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/medicine dashboard.css" />
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <nav>
+              <span class="fa-solid fa-bars" id="fa-bars"></span>
+              <ul class="sidebar-lists" id="nav-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                    <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Madhusha
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-medicine-dashboard-container">
+            <div class="medicine-head">
+              <h2 class="medicine-title">Medicine Management</h2>
+            </div>
+          </section>
+          <section class="second-medicine-dashboard-container">
+            <section class="top-medicine-head">
+              <div class="left-medicine-head">
+                <button class="medicine-head-btn-1">Generate report</button>
+              </div>
+              <div class="right-medicine-head">
+                <input type="text" placeholder="Medicine ID" class="ID" />
+                <button class="medicine-head-btn-2">Search</button>
+              </div>
+            </section>
+            <section class="form-container">
+              <form>
+                <div class="input-group-1">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Medicine Name"
+                    class="med-name"
+                  />
+                  <input
+                    type="text"
+                    required
+                    placeholder="Supplier Name"
+                    class="sup-name"
+                  />
+                </div>
+
+                <div class="input-group-2">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Expire Date"
+                    class="exp-date"
+                  />
+                  <input
+                    type="text"
+                    required
+                    placeholder="Manufacture Date"
+                    class="man-date"
+                  />
+                </div>
+                <div class="input-group-3">
+                  <input type="text" required placeholder="QTY" class="qty" />
+
+                  <input
+                    type="text"
+                    required
+                    placeholder="Unit Price"
+                    class="price"
+                  />
+                </div>
+
+                <section class="form-btn">
+                  <button class="form-btn-1">Add</button>
+                  <button class="form-btn-2">Update</button>
+                  <button class="form-btn-3">Delete</button>
+                </section>
+              </form>
+            </section>
+          </section>
+          <section class="third-medicine-dashboard-container">
+            <h2>Out of stock</h2>
+            <p class="medicine-text">
+              A list of drugs currently out of stock, including drug names,
+              categories, last restock dates, and expected availability.
+            </p>
+            <table class="data-table">
+              <!-- Table Head-->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Medicine Name</th>
+                  <th>Expire Date</th>
+                  <th>Manufacture Date</th>
+                  <th>Supplier Name</th>
+                  <th>Unit Price</th>
+                  <th>QTY</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table Head-->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Emzolyn</td>
+                  <td>2027-06-25</td>
+                  <td>2024-06-25</td>
+                  <td>Akin Taju</td>
+                  <td>1500.00</td>
+                  <td>280</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>Ibuprofen</td>
+                  <td>2027-07-11</td>
+                  <td>2023-07-19</td>
+                  <td>Anita Joe</td>
+                  <td>4500.00</td>
+                  <td>100</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Predicure</td>
+                  <td>2025-09-23</td>
+                  <td>2015-09-23</td>
+                  <td>Bella Lia</td>
+                  <td>6000.00</td>
+                  <td>300</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Calcium</td>
+                  <td>2026-05-22</td>
+                  <td>2022-08-25</td>
+                  <td>Daniel Doe</td>
+                  <td>1000.00</td>
+                  <td>700</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Fesulf</td>
+                  <td>2027-12-03</td>
+                  <td>2024-11-29</td>
+                  <td>Fatima flatt</td>
+                  <td>900.00</td>
+                  <td>350</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+              </div>
+              <!-- Table data -->
+            </table>
+              <div id="undo-btn" style="display: none">
+              <button class="undo-btn" onclick="undoDelete()">
+                Undo Delete
+              </button>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Dashboard content -->
+
+    <script src="js/medicine dashboard.js"></script>
+  </body>
+</html>

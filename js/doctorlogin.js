@@ -126,3 +126,6 @@ if (headerLoginBtn) {
     }
   });
 }
+
+localStorage.setItem("userRole", "staff");
+
