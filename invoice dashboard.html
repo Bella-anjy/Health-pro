@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <title>healthPro | Invoice Dashboard Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/invoice dashboard.css" />
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <nav>
+              <span class="fa-solid fa-bars" id="fa-bars"></span>
+              <ul class="sidebar-lists" id="nav-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="/lab dashboard.html">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="/ward dashboard.html">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/treatment dashboard.html">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                   <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Madhusha
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-invoice-dashboard-container">
+            <div class="invoice-head">
+              <h2 class="invoice-title">Invoice Management</h2>
+            </div>
+          </section>
+          <section class="second-invoice-dashboard-container">
+            <section class="top-invoice-head">
+              <div class="left-invoice-head">
+                <button class="invoice-head-btn-1">Generate Report</button>
+              </div>
+              <div class="right-invoice-head">
+                <input type="text" placeholder="Invoice ID" class="ID" />
+                <button class="invoice-head-btn-2">Search</button>
+              </div>
+            </section>
+            <section class="form-container">
+              <form>
+                <div class="input-group-1">
+                  <select required class="Patient-Name">
+                    <option value="" disabled selected>Patient Name</option>
+                    <option value="Tomiwa Adelabi">Tomiwa Adelabi</option>
+                    <option value="Fatima Flatt">Fatima Flatt</option>
+                    <option value="Goodluck Ibegbu">Goodluck Ibegbu</option>
+                    <option value="George Rebecca">George Rebecca</option>
+                    <option value="Ajayi Maria ">Ajayi Maria</option>
+                    <option value="Jemeyah Thompson">Jemeyah Thompson</option>
+                    <option value="Bella Doe">Bella Doe</option>
+                    <option value="Olafare Posi">Olafare Posi</option>
+                  </select>
+                  <select required class="Doctor-Name">
+                    <option value="" disabled selected>Doctor Name</option>
+                    <option value="Dr. Aliyah Rae">Dr. Aliyah Rae</option>
+                    <option value="Dr. Nyla Mae">Dr. Nyla Mae</option>
+                    <option value="Dr. Whitney">Dr. Whitney</option>
+                    <option value="Dr. Thompson">Dr. Thompson</option>
+                    <option value="Dr. Bella Lia ">Dr. Bella Lia</option>
+                    <option value="Dr. John Doe">Dr. John Doe</option>
+                    <option value="Dr. Mubarak">Dr. Mubarak</option>
+                    <option value="Dr. Iyke David">Dr. Iyke David</option>
+                  </select>
+                </div>
+
+                <div class="input-group-2">
+                  <select required class="Lab-Name">
+                    <option value="" disabled selected>Lab Name</option>
+                    <option value="Clinical Laboratory">
+                      Clinical Laboratory
+                    </option>
+                    <option value="Pathology Laboratory">
+                      Pathology Laboratory
+                    </option>
+                    <option value="Radiology Laboratory">
+                      Radiology Laboratory
+                    </option>
+                    <option value="Microbiology Laboratory">
+                      Microbiology Laboratory
+                    </option>
+                    <option value="Hematology Laboratory ">
+                      Hematology Laboratory
+                    </option>
+                    <option value="Immunology Laboratory">
+                      Immunology Laboratory
+                    </option>
+                    <option value="Genetics Laboratory">
+                      Genetics Laboratory
+                    </option>
+                    <option value="Cytology Laboratory">
+                      Cytology Laboratory
+                    </option>
+                  </select>
+                  <select required class="Treatment">
+                    <option value="" disabled selected>Treatment</option>
+                    <option value="Surgery">Surgery</option>
+                    <option value="Physical Therapy">Physical Therapy</option>
+                    <option value="Radiation Therapy">Radiation Therapy</option>
+                    <option value="Chemotherapy">Chemotherapy</option>
+                    <option value="Dialysis">Dialysis</option>
+                    <option value="Transplantation">Transplatation</option>
+                    <option value="Occupational Therapy">
+                      Occupational Therapy
+                    </option>
+                    <option value="Mental Health Care">
+                      Mental Health Care
+                    </option>
+                  </select>
+                </div>
+                <div class="input-group-3">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Ward Number"
+                    class="ward"
+                  />
+                  <h2 class="invoice-text">Total Amount: 150000</h2>
+                </div>
+                <button class="form-btn">Generate Bill</button>
+              </form>
+            </section>
+          </section>
+          <section class="third-invoice-dashboard-container">
+            <h2>Recent Invoice</h2>
+            <p class="invoice-text-2">
+              A summary of past invoices, detailing issued dates, clients,
+              amounts, and payment statuses.
+            </p>
+            <table id="data-table">
+              <!-- Table Head-->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Patient Name</th>
+                  <th>Lab Name</th>
+                  <th>Ward Number</th>
+                  <th>Doctor Name</th>
+                  <th>Treatment</th>
+                  <th>Total Amount</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table Head-->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Nike Adeleke</td>
+                  <td>Blood Lab</td>
+                  <td>32</td>
+                  <td>Dr. Akin Noah</td>
+                  <td>Blood Test</td>
+                  <td>250000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>Wizkid Ayo</td>
+                  <td>Radiology Laboratory</td>
+                  <td>45</td>
+                  <td>Dr. Bella Lia</td>
+                  <td>Cancer Test</td>
+                  <td>890000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Alfred Lawson</td>
+                  <td>Genetics Laboratory</td>
+                  <td>20</td>
+                  <td>Dr. Maria Joe</td>
+                  <td>DNA Test</td>
+                  <td>350000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Max Adewunmi</td>
+                  <td>Nephrology Unit</td>
+                  <td>2</td>
+                  <td>Dr. Daniel Doe</td>
+                  <td>Dialysis</td>
+                  <td>120000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Feranmi Judah</td>
+                  <td>Immunology Laboratory</td>
+                  <td>224</td>
+                  <td>Dr. Fathia Jude</td>
+                  <td>Rubella Test</td>
+                  <td>900000.00</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+              </div>
+              <!-- Table data -->
+            </table>
+              <div id="undo-btn" style="display: none">
+              <button class="undo-btn" onclick="undoDelete()">
+                Undo Delete
+              </button>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Dashboard content -->
+
+    <script src="js/invoice dashboard.js"></script>
+  </body>
+</html>

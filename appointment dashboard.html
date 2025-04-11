@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <title>healthPro | Appointment Dashboard Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/appointment dashboard.css" />
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <nav>
+              <span class="fa-solid fa-bars" id="fa-bars"></span>
+              <ul class="sidebar-lists" id="nav-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                   <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Madhusha
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-appointment-dashboard-container">
+            <div class="appointment-head">
+              <h2 class="appointment-title">Appointment Management</h2>
+            </div>
+          </section>
+          <section class="second-appointment-dashboard-container">
+            <section class="top-appointment-head">
+              <div class="left-appointment-head">
+                <button class="appointment-head-btn-1">Generate report</button>
+              </div>
+              <div class="righf-appointment-head">
+                <input type="text" placeholder="ID" class="ID" />
+                <button class="appointment-head-btn-2">Search</button>
+              </div>
+            </section>
+            <section class="form-container">
+              <form>
+                <div class="input-group-1">
+                  <input
+                    type="text"
+                    required
+                    placeholder="First Name"
+                    class="first-name"
+                  />
+                  <input
+                    type="text"
+                    required
+                    placeholder="Last Name"
+                    class="last-name"
+                  />
+                </div>
+                <div class="input-group-2">
+                  <input
+                    type="email"
+                    required
+                    placeholder="Email"
+                    class="mail"
+                  />
+                  <input
+                    type="number"
+                    required
+                    placeholder="Mobile number"
+                    class="num"
+                  />
+                </div>
+                <div class="input-group-3">
+                  <input type="text" required placeholder="NIC" class="nic" />
+                  <input
+                    type="date"
+                    required
+                    placeholder="Date of Birth"
+                    class="dob"
+                  />
+                </div>
+                <div class="input-group-4">
+                  <select class="gender">
+                    <option value="" disabled selected>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                  <input
+                    type="date"
+                    required
+                    placeholder="Appointment Date"
+                    class="Appointment-date"
+                  />
+                  <input
+                    type="time"
+                    required
+                    placeholder="Appointment Time"
+                    class="Appointment-Time"
+                  />
+                </div>
+                <div class="input-group-5">
+                  <select required class="Department">
+                    <option value="" disabled selected>Department Name</option>
+                    <option value="Opthalmologist">Opthalmologist</option>
+                    <option value="Pediatrician">Pediatrician</option>
+                    <option value="Gynaecologist">Gynaecologist</option>
+                    <option value="Dermatologist">Dermatologist</option>
+                    <option value="Radiologist">Radiologist</option>
+                    <option value="Neurosurgeon">Neurosurgeon</option>
+                    <option value="Psychiatrist">Psychiatrist</option>
+                    <option value="Nephrologist">Nephrologist</option>
+                  </select>
+                  <select required class="Doctor-Name">
+                    <option value="" disabled selected>Doctor Name</option>
+                    <option value="Dr. Aliyah Rae">Dr. Aliyah Rae</option>
+                    <option value="Dr. Nyla Mae">Dr. Nyla Mae</option>
+                    <option value="Dr. Whitney">Dr. Whitney</option>
+                    <option value="Dr. Thompson">Dr. Thompson</option>
+                    <option value="Dr. Bella Lia ">Dr. Bella Lia</option>
+                    <option value="Dr. John Doe">Dr. John Doe</option>
+                    <option value="Dr. Mubarak">Dr. Mubarak</option>
+                    <option value="Dr. Iyke David">Dr. Iyke David</option>
+                  </select>
+                </div>
+                <div class="input-group-6">
+                  <textarea
+                    required
+                    placeholder="Address"
+                    class="address"
+                  ></textarea>
+                </div>
+
+                <section class="form-btn">
+                  <button class="form-btn-1">Register</button>
+                  <button class="form-btn-2">Update</button>
+                  <button class="form-btn-3">Delete</button>
+                </section>
+              </form>
+            </section>
+          </section>
+          <section class="third-appointment-dashboard-container">
+            <h2>Recent Appointed Doctors</h2>
+            <p class="appointed-text">
+              A record of recent appointments, showing doctor names, Nic, Role,
+              and statuses.
+            </p>
+            <table id="data-table">
+              <!-- Table Head-->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Role</th>
+                  <th>Gender</th>
+                  <th>Email</th>
+                  <th>Mobile number</th>
+                  <th>NIC</th>
+                  <th>DOB</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table Head-->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Dr. Thompson</td>
+                  <td>Dermatologist</td>
+                  <td>Male</td>
+                  <td>thompsom22@gmail.com</td>
+                  <td>071-667454563</td>
+                  <td>32162545</td>
+                  <td>1995-04-13</td>
+                  <td><button class="tr-btn">Online</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>Dr. Bella</td>
+                  <td>Radiologist</td>
+                  <td>Female</td>
+                  <td>bellaliah32@gmail.com</td>
+                  <td>091-263865246</td>
+                  <td>78677890</td>
+                  <td>2002-08-25</td>
+                  <td><button class="tr-btn">Online</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Dr. Franklyn</td>
+                  <td>Dentist</td>
+                  <td>Male</td>
+                  <td>franklyn045@gmail.com</td>
+                  <td>070-456789909</td>
+                  <td>23471234</td>
+                  <td>1997-09-18</td>
+                  <td><button class="tr-btn">Online</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Dr. John</td>
+                  <td>Neurosurgeon</td>
+                  <td>Male</td>
+                  <td>johndoe009@gmail.com</td>
+                  <td>080-980796789</td>
+                  <td>32173456</td>
+                  <td>2000-07-12</td>
+                  <td><button class="tr-btn">Online</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Dr. Sylva</td>
+                  <td>Endocrinologist</td>
+                  <td>Female</td>
+                  <td>anita098@gmail.com</td>
+                  <td>081-521956432</td>
+                  <td>09345679</td>
+                  <td>2001-03-23</td>
+                  <td><button class="tr-btn">Online</button></td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+              </div>
+              <!-- Table data -->
+            </table>
+              <div id="undo-btn" style="display: none">
+              <button class="undo-btn" onclick="undoDelete()">
+                Undo Delete
+              </button>
+            </div>
+          </section>
+        </section>
+      </section>
+      <!-- Dashboard content -->
+    </section>
+
+    <script src="js/appointment dashboard.js"></script>
+  </body>
+</html>

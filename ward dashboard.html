@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthPro | Ward Dashboard Page</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/ward dashboard.css" />
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <div class="nav">
+              <div class="toggle-btn" id="toggleNav">
+                <span class="fa-solid fa-bars" id="fa-bars"></span>
+              </div>
+            </div>
+            <nav id="sidebar">
+              <ul class="sidebar-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="/lab dashboard.html">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="/ward dashboard.html">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/treatment dashboard.html">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Ward
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-dashboard-main-content">
+            <section class="cards">
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img3.png" alt="card-img" />
+                  <h3>
+                    Labour
+                    <br />
+                    Ward
+                  </h3>
+                </div>
+                <h4 class="card-num">Ward 168</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img3.png" alt="card-img" />
+                  <h3>
+                    ICU
+                    <br />
+                    Room
+                  </h3>
+                </div>
+                <h4 class="card-num">Ward 5</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img3.png" alt="card-img" />
+                  <h3>
+                    Maternity
+                    <br />
+                    Ward
+                  </h3>
+                </div>
+                <h4 class="card-num">Ward 290</h4>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <img src="image/card-img3.png" alt="card-img" />
+                  <h3>
+                    General <br />
+                    ward
+                  </h3>
+                </div>
+                <h4 class="card-num">Ward 50</h4>
+              </div>
+            </section>
+          </section>
+          <section class="second-ward-dashboard-container">
+            <div class="ward-head">
+              <h2 class="ward-title">Ward Management</h2>
+            </div>
+          </section>
+          <section class="third-ward-dashboard-container">
+            <section class="form-container">
+              <h2>Book a Ward Room</h2>
+              <form>
+                <div class="input-group-1">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Patient Name"
+                    class="name"
+                  />
+                  <select required class="Doctor-Name">
+                    <option value="" disabled selected>Doctor Name</option>
+                    <option value="Dr.Akin Noah">Dr.Akin Noah</option>
+                    <option value="Dr. Bella Lia">Dr. Bella Lia</option>
+                    <option value="Dr. Maria Joe">Dr. Maria Joe</option>
+                    <option value="Dr. Daniel Doe">Dr. Daniel Doe</option>
+                    <option value="Dr. Fathia Jude ">Dr. Fathia Jude</option>
+                    <option value="Dr. Freda Tomiwa">Dr. Freda Tomiwa</option>
+                  </select>
+                </div>
+
+                <div class="input-group-2">
+                  <select required class="Ward">
+                    <option value="" disabled selected>Ward Name</option>
+                    <option value="Cardiology Ward">Cardiology Ward</option>
+                    <option value="Psychiatric Ward">Psychiatric Ward</option>
+                    <option value="Orthpedic Ward">Orthpedic Ward</option>
+                    <option value="Dialysis Ward">Dialysis Ward</option>
+                    <option value="Oncology Ward ">Oncology Ward</option>
+                    <option value="Maternity Ward">Maternity Ward</option>
+                  </select>
+                  <select required class="Nurse">
+                    <option value="" disabled selected>Nurse Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
+                <div class="input-group-3">
+                  <input
+                    type="text"
+                    required
+                    placeholder="Ward Number"
+                    class="ward"
+                  />
+                  <select class="room">
+                    <option value="" disabled selected>
+                      Available Ward Rooms
+                    </option>
+                    <option value="92">92</option>
+                    <option value="46">46</option>
+                    <option value="34">34</option>
+                    <option value="33">33</option>
+                    <option value="90">90</option>
+                    <option value="12">12</option>
+                    <option value="23">23</option>
+                    <option value="18">18</option>
+                  </select>
+                </div>
+                <button class="form-btn">Book</button>
+              </form>
+            </section>
+          </section>
+          <section class="fourth-ward-dashboard-container">
+            <h2>Recent Ward Patients</h2>
+            <p class="ward-text-2">
+              A summary of past patients, detailing doctors in charge, ward
+              numbers, amounts.
+            </p>
+            <table id="data-table">
+              <!-- Table Head-->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Patient Name</th>
+                  <th>Ward Name</th>
+                  <th>Ward Room</th>
+                  <th>Doctor Name</th>
+                  <th>Days Spent</th>
+                  <th>Nurse in charge</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table Head-->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Nicolas Adeleke</td>
+                  <td>Maternity Ward</td>
+                  <td>168</td>
+                  <td>Dr. Akin Noah</td>
+                  <td>6</td>
+                  <td>Nurse Faith</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>Wizkid Ayomide</td>
+                  <td>Oncology Ward</td>
+                  <td>65</td>
+                  <td>Dr. Bella Lia</td>
+                  <td>10</td>
+                  <td>Nurse Brain</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Alfred Lawson</td>
+                  <td>Dialysis Ward</td>
+                  <td>50</td>
+                  <td>Dr. Maria Joe</td>
+                  <td>2</td>
+                  <td>Nurse Darlington</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Maxwell Ajewunmi</td>
+                  <td>Orthopedic Ward</td>
+                  <td>290</td>
+                  <td>Dr. Daniel Doe</td>
+                  <td>6</td>
+                  <td>Nurse Fidelity</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Feranmi Judah</td>
+                  <td>Psychaitric Ward</td>
+                  <td>224</td>
+                  <td>Dr. Fathia Jude</td>
+                  <td>20</td>
+                  <td>Nurse Anita</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>6</td>
+                  <td>Ajibade John</td>
+                  <td>Cardiology Ward</td>
+                  <td>123</td>
+                  <td>Dr. Freda Tomiwa</td>
+                  <td>12</td>
+                  <td>Nurse Biola</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+              </div>
+              <!-- Table data -->
+            </table>
+              <div id="undo-btn" style="display: none">
+              <button class="undo-btn" onclick="undoDelete()">
+                Undo Delete
+              </button>
+            </div>
+          </section>
+          <!-- DASHBOARD CONTENT -->
+        </section>
+      </section>
+    </section>
+    <script src="js/ward dashboard.js"></script>
+  </body>
+</html>

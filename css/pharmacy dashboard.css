@@ -1,0 +1,182 @@
+/* pharmacy dashoard styles */
+/* Main content */
+/* first pharmacy dashboard container */
+.first-pharmacy-dashboard-container {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: -1rem;
+}
+.pharmacy-head {
+  padding: 0.5rem;
+}
+.pharmacy-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* first pharmacy dashboard container */
+/* second pharmacy dashboard container */
+.second-pharmacy-dashboard-container {
+  margin-top: 1rem;
+}
+.pharmacy-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.pharmacy-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 9px 7px;
+}
+.pharmacy-card-content {
+  text-align: center;
+}
+.card-text-1 {
+  margin-top: 1rem;
+}
+.card-text-2 {
+  margin-top: 1rem;
+}
+.pharmacy-buttons {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.pharmacy-btn {
+  background: linear-gradient(68.08deg, #9083d5 9.64%, #807593 92.49%);
+  padding: 32px 24px;
+  color: #ffff;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* second pharmacy dashboard container */
+/* third pharmacy dashboard container */
+.third-pharmacy-dashboard-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.third-pharmacy-dashboard-container-1,
+.third-pharmacy-dashboard-container-2 {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 14px 14px 0px #14172605;
+}
+.third-dashboard-content-1-header,
+.third-dashboard-content-2-header ,
+.fourth-dashboard-content-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.line {
+  border: 0.2px solid #8992a9;
+  margin-top: 0.2rem;
+}
+/*  Second dashboard content 1 Table styles */
+.chart-container {
+  padding: 20px;
+  min-width: 300px;
+  height: 300px;
+  margin-top: 2.5rem;
+  position: relative;
+}
+.chart-container canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.graph-texts {
+  padding: 1rem;
+  padding-bottom: -30rem;
+}
+.graph-text-1,
+.graph-text-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.graph-text-1 h2 {
+  font-size: 1rem;
+  color: #8992a9;
+  font-weight: 700;
+}
+.graph-text-2 h2 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+/* third pharmacy dashboard container */
+/* fourth pharmacy dashboard container */
+.fourth-pharmacy-dashboard-container {
+  display: flex;
+  margin-top: 2rem;
+}
+.graph-1 {
+  flex: 1;
+}
+.bar-chart {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.stock-report {
+  height: 500px;
+
+}
+.stock-report canvas {
+  height: 80% !important;
+  width: 100% !important;
+}
+/* fourth pharmacy dashboard container */
+
+/* fifth pharmacy dashboard container */
+.fifth-pharmacy-dashboard-container {
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.pharmacy-text {
+  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+  font-size: 20px;
+
+  font-weight: 500;
+}
+.table {
+  padding: 1rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr,
+th,
+td {
+  text-align: left;
+  padding: 1rem;
+}
+th,
+td {
+  font-size: 16px;
+  font-weight: 700;
+}
+.tr-2 {
+  background-color: #f4f4f4;
+}
+.status-1 {
+  color: #0fb800;
+}
+.status-2 {
+  color: #f00000;
+}
+/* fifth medicine dashboard container */
+
+/* Main content */
+
+/* medicine dashoard styles */

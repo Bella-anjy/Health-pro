@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <title>healthPro | Patient Dashboard Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/patient dashboard.css" />
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <nav>
+              <span class="fa-solid fa-bars" id="fa-bars"></span>
+              <ul class="sidebar-lists" id="nav-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                   <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Madhusha
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-patient-dashboard-container">
+            <div class="patient-head">
+              <h2 class="patient-title">Patient Management</h2>
+            </div>
+          </section>
+          <section class="second-patient-dashboard-container">
+            <section class="top-patient-head">
+              <div class="left-patient-head">
+                <button class="patient-head-btn-1">Generate report</button>
+              </div>
+              <div class="right-patient-head">
+                <input type="text" placeholder="ID" class="ID" />
+                <button class="patient-head-btn-2">Search</button>
+              </div>
+            </section>
+            <section class="form-container">
+              <form>
+                <div class="input-group-1">
+                  <input
+                    type="text"
+                    required
+                    placeholder="First Name"
+                    class="first-name"
+                  />
+                  <input
+                    type="text"
+                    required
+                    placeholder="Last Name"
+                    class="last-name"
+                  />
+                </div>
+
+                <div class="input-group-2">
+                  <input
+                    type="email"
+                    required
+                    placeholder="Email"
+                    class="mail"
+                  />
+                  <input
+                    type="number"
+                    required
+                    placeholder="Mobile number"
+                    class="num"
+                  />
+                </div>
+                <div class="input-group-3">
+                  <input type="text" required placeholder="NIC" class="nic" />
+                  <input
+                    type="date"
+                    required
+                    placeholder="Date of Birth"
+                    class="dob"
+                  />
+                </div>
+                <div class="input-group-4">
+                  <textarea
+                    required
+                    placeholder="Address"
+                    class="address"
+                  ></textarea>
+                </div>
+
+                <div class="input">
+                  <div class="input-group-5">
+                    <select class="gender">
+                      <option value="" disabled selected>Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                    <input
+                      type="password"
+                      required
+                      placeholder="Password"
+                      class="password"
+                      id="passcode"
+                    />
+                    <span id="fa-eye" class="fa-regular fa-eye"></span>
+                    <span
+                      id="fa-eye-slash"
+                      class="fa-regular fa-eye-slash"
+                    ></span>
+                  </div>
+                  <div class="input-group-6">
+                    <input
+                      type="password"
+                      required
+                      placeholder="Confirm password"
+                      class="confirm-password"
+                      id="code"
+                    />
+                    <span id="eye" class="fa-regular fa-eye"></span>
+                    <span id="eye-slash" class="fa-regular fa-eye-slash"></span>
+                  </div>
+                </div>
+                <section class="form-btn">
+                  <button class="form-btn-1">Register</button>
+                  <button class="form-btn-2">Update</button>
+                  <button class="form-btn-3">Delete</button>
+                </section>
+              </form>
+            </section>
+          </section>
+          <section class="third-patient-dashboard-container">
+            <h2>Recent Patients</h2>
+            <p class="patient-text">
+              A list of registered patients, including names, ID numbers,
+              contact details, and medical status.
+            </p>
+            <table id="data-table">
+              <!-- Table Head-->
+              <thead class="thead">
+                <tr>
+                  <th>Patient ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>NIC</th>
+                  <th>Email</th>
+                  <th>Mobile number</th>
+                  <th>Date of Birh</th>
+                  <th>Gender</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- Table Head-->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Tomiwa</td>
+                  <td>Adelabi</td>
+                  <td>65789034</td>
+                  <td>tomiwa12@gmail.com</td>
+                  <td>071-345894563</td>
+                  <td>1994-03-13</td>
+                  <td>Female</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>George</td>
+                  <td>Rebecca</td>
+                  <td>34567890</td>
+                  <td>beccah32@gmail.com</td>
+                  <td>091-263865246</td>
+                  <td>2002-08-15</td>
+                  <td>Female</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>David</td>
+                  <td>Iyke</td>
+                  <td>34571234</td>
+                  <td>iykeace45@gmail.com</td>
+                  <td>081-456789909</td>
+                  <td>1990-09-18</td>
+                  <td>Male</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Ibegbu</td>
+                  <td>Goodluck</td>
+                  <td>09873456</td>
+                  <td>goodyluck009@gmail.com</td>
+                  <td>090-980766789</td>
+                  <td>2002-07-12</td>
+                  <td>Male</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Fatima</td>
+                  <td>Flatt</td>
+                  <td>22340079</td>
+                  <td>fatimatt098@gmail.com</td>
+                  <td>080-000023432</td>
+                  <td>2003-03-23</td>
+                  <td>Female</td>
+                  <td class="pen">
+                    <span
+                      class="fa-solid fa-pen"
+                      onclick="editRow(this)"
+                    ></span>
+                  </td>
+                  <td class="delete">
+                    <span
+                      class="fa-solid fa-trash"
+                      onclick="deleteRow(this)"
+                    ></span>
+                  </td>
+                </tr>
+              </div>
+              <!-- Table data -->
+            </table>
+              <div id="undo-btn" style="display: none">
+              <button class="undo-btn" onclick="undoDelete()">
+                Undo Delete
+              </button>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Dashboard content -->
+
+    <script src="js/patient dashboard.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <title>healthPro | Pharmacy Dashboard Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/pharmacy dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Dashboard layout -->
+    <section class="dashboard">
+      <!-- SIDEBAR -->
+      <section class="sidebar">
+        <section class="sidebar-contents">
+          <section class="sidebar-content">
+            <nav>
+              <span class="fa-solid fa-bars" id="fa-bars"></span>
+              <ul class="sidebar-lists" id="nav-lists">
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/dashboard.html">Dashboard</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img2.png" alt="sidebar image" />
+                  <a href="/staff dashboard.html">Staff</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img3.png" alt="sidebar image" />
+                  <a href="">Lab</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img4.png" alt="sidebar image" />
+                  <a href="">Ward</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="">Treatment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img6.png" alt="sidebar image" />
+                  <a href="/pharmacy dashboard.html">Pharmacy</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/patient dashboard.html">Patient</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img1.png" alt="sidebar image" />
+                  <a href="/invoice dashboard.html">Invoice</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img7.png" alt="sidebar image" />
+                  <a href="/appointment dashboard.html">Appointment</a>
+                </li>
+                <li class="sidebar-list">
+                  <img src="image/sidebar-img5.png" alt="sidebar image" />
+                  <a href="/medicine dashboard.html">Medicine</a>
+                </li>
+            
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </section>
+      <!-- SIDEBAR-->
+      <!-- DASHBOARD CONTENT -->
+      <section class="dashboard-content">
+        <section class="nav-bar">
+          <section class="first-navbar-content">
+            <img src="image/navbar-img1.png" alt="navbar image" />
+            Madhusha
+          </section>
+          <section class="second-navbar-content">
+            <img src="image/healthPro-logo (1).png" alt="healthPro-logo" />
+          </section>
+          <section class="third-navbar-content">
+            <div class="admin">
+              <img
+                src="image/navbar-img2.png"
+                alt="navbar image"
+                class="nav-img-2"
+              />
+              <p>Admin Liya</p>
+            </div>
+            <img
+              src="image/navbar-img3.jfif"
+              alt="navbar image"
+              class="nav-img"
+            />
+          </section>
+        </section>
+        <section class="main-content">
+          <section class="first-pharmacy-dashboard-container">
+            <div class="pharmacy-head">
+              <h2 class="pharmacy-title">Pharmacy Management</h2>
+            </div>
+          </section>
+          <section class="second-pharmacy-dashboard-container">
+            <section class="pharmacy-cards">
+              <div class="pharmacy-card">
+                <div class="pharmacy-card-content">
+                  <h2 class="card-text-1">Total Customer</h2>
+                  <h2 class="card-text-2">25</h2>
+                </div>
+              </div>
+              <div class="pharmacy-card">
+                <div class="pharmacy-card-content">
+                  <h2 class="card-text-1">Total Medicine</h2>
+                  <h2 class="card-text-2">50</h2>
+                </div>
+              </div>
+              <div class="pharmacy-card">
+                <div class="pharmacy-card-content">
+                  <h2 class="card-text-1">Total Manufactures</h2>
+                  <h2 class="card-text-2">75</h2>
+                </div>
+              </div>
+            </section>
+            <div class="pharmacy-buttons">
+              <button class="pharmacy-btn">Create invoice</button>
+              <button class="pharmacy-btn">Suppliers</button>
+              <button class="pharmacy-btn">Medicine</button>
+            </div>
+          </section>
+          <section class="third-pharmacy-dashboard-container">
+            <section class="third-pharmacy-dashboard-container-1">
+              <div class="third-dashboard-content-1-header">
+                <h2>Purchases reports</h2>
+                <p>
+                  7 days
+                  <img
+                    src="image/second-dashboard-img1.png"
+                    alt="arrow"
+                    class="arrow"
+                  />
+                </p>
+              </div>
+              <hr class="line" />
+              <p class="chart-text">02.04.2025 - 09.04.2025</p>
+
+              <div class="chart-container">
+                <canvas id="lineChart"></canvas>
+              </div>
+              <hr class="line" />
+              <div class="graph-texts">
+                <div class="graph-text-1">
+                  <h2>All time</h2>
+                  <h2>30 days</h2>
+                  <h2>7 days</h2>
+                </div>
+                <div class="graph-text-2">
+                  <h2>41 234</h2>
+                  <h2>41 234</h2>
+                  <h2>41 234</h2>
+                </div>
+              </div>
+            </section>
+            <section class="third-pharmacy-dashboard-container-2">
+              <div class="third-dashboard-content-2-header">
+                <h2>Sells reports</h2>
+                <p>
+                  All
+                  <img
+                    src="image/second-dashboard-img1.png"
+                    alt="arrow"
+                    class="arrow"
+                  />
+                </p>
+              </div>
+              <hr class="line" />
+              <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+              </div>
+            </section>
+          </section>
+          <section class="fourth-pharmacy-dashboard-container">
+            <section class="graph-1"></section>
+            <section class="bar-chart">
+              <div class="fourth-dashboard-content-header">
+                <h2>Stock reports</h2>
+                <p>
+                  All
+                  <img
+                    src="image/second-dashboard-img1.png"
+                    alt="arrow"
+                    class="arrow"
+                  />
+                </p>
+              </div>
+              <hr class="line" />
+              <section class="stock-report">
+                <canvas id="barChart"></canvas>
+              </section>
+            </section>
+          </section>
+          <section class="fifth-pharmacy-dashboard-container">
+            <h2>Out of stock</h2>
+            <p class="pharmacy-text">
+              A list of drugs currently out of stock, including drug names,
+              categories, last restock dates, and expected availability.
+            </p>
+            <table>
+              <!-- Table Head-->
+              <thead class="thead">
+                <tr>
+                  <th>ID</th>
+                  <th>Drug Name</th>
+                  <th>Expire Date</th>
+                  <th>Manufacture Date</th>
+
+                  <th>Unit Price</th>
+                  <th>QTY</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <!-- Table Head-->
+              <!-- Table data -->
+              <div class="table-row">
+                <tr>
+                  <td>1</td>
+                  <td>Blood Tonic</td>
+                  <td>2027-06-25</td>
+                  <td>2024-06-25</td>
+                  <td>1500.00</td>
+                  <td>280</td>
+                  <td class="status-1">Available</td>
+                </tr>
+                <tr class="tr-2">
+                  <td>2</td>
+                  <td>Piriton</td>
+                  <td>2027-07-11</td>
+                  <td>2023-07-19</td>
+                  <td>4500.00</td>
+                  <td>100</td>
+                  <td class="status-2">Out of Stock</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Buscopan</td>
+                  <td>2025-09-23</td>
+                  <td>2015-09-23</td>
+                  <td>6000.00</td>
+                  <td>300</td>
+                  <td class="status-1">Available</td>
+                </tr>
+                <tr class="tr-2">
+                  <td>4</td>
+                  <td>Vitamin E</td>
+                  <td>2026-05-22</td>
+                  <td>2022-08-25</td>
+                  <td>1000.00</td>
+                  <td>700</td>
+                  <td class="status-2">Out of stock</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Flu-J</td>
+                  <td>2027-12-03</td>
+                  <td>2024-11-29</td>
+                  <td>900.00</td>
+
+                  <td>350</td>
+                  <td class="status-1">Available</td>
+                </tr>
+              </div>
+              <!-- Table data -->
+            </table>
+          </section>
+        </section>
+      </section>
+    </section>
+    <!-- Dashboard content -->
+
+    <script src="js/pharmacy dashboard.js"></script>
+    <script src="js/logout.js"></script>
+  </body>
+</html>
